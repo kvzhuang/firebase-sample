@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Demonstrates the use of Google Cloud Database with a Firebase DB">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Database Quickstart</title>
+
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/base-min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Firebase -->
+  <!-- *******************************************************************************
+       * TODO(DEVELOPER): Paste the initialization snippet by navigating to:
+
+        https://console.firebase.google.com
+
+       and choosing a project you've created.  Then click the red HTML logo at the top
+       right of the page with the caption "Add Firebase to your web app".
+
+       Copy the snippet that appears in place of this comment.
+       *************************************************************************** -->
+
+  <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCalTjHIX-PzXHNTz_yzH-tSfoADmboFPc",
+      authDomain: "auth-fcac4.firebaseapp.com",
+      databaseURL: "https://auth-fcac4.firebaseio.com",
+      storageBucket: "auth-fcac4.appspot.com",
+      messagingSenderId: "367428278594"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+<body>
+  <div class="mdl-grid">
+    <div>
+      <span id="displayName"></span>TODO (Firebase database access sample)
+    </div>
+    <input id="todo-text" type="text" />
+    <button onclick="javascript:create();">Add todo</button>
+    <br/>
+    <div id="loading" class="load-wrapp show">
+        <div class="load-7">
+            <div class="square-holder">
+                <div class="square"></div>
+            </div>
+        </div>
+    </div>
+    <div id="todos-container">
+    </div>
+    <a href="storage.html">Goto Upload Page</a>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

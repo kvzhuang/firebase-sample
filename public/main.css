@@ -1,0 +1,79 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+html, body {
+  font-family: 'Microsoft JhengHei', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li a {
+  text-decoration: underline;
+  color: #0288d1;
+}
+pre {
+  overflow-x: scroll;
+  line-height: 18px;
+}
+code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+h3 {
+  background-size: 40px;
+  padding-left: 50px;
+  color: white;
+}
+
+.user-block {
+
+}
+.mdl-grid {
+  max-width: 1024px;
+  margin: auto;
+}
+.todo-item {
+  width: 400px;
+  border: solid 1px #bbb;
+  border-radius: 3px;
+  margin: 5px 0;
+  padding: 5px;
+}
+.load-wrapp {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 10px 0;
+    padding: 20px 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+.load-wrapp.show {
+  display: inline-block;
+}
+.load-7 .square {animation: loadingG 1.5s cubic-bezier(.17,.37,.43,.67) infinite;}
+.square {
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+    background-color: #4b9cdb;
+}
+@keyframes loadingG {
+    0% {transform: translate(0,0) rotate(0deg);}
+    50% {transform: translate(70px,0) rotate(360deg);}
+    100% {transform: translate(0,0) rotate(0deg);}
+}
